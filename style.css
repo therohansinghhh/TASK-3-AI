@@ -1,0 +1,126 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Ensures alignment from the top */
+    height: 100vh;
+    overflow-y: auto;  /* Enables scrolling */
+  }
+  
+  /* Container for the form */
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 50px; /* Added margin-top for spacing from the top */
+    overflow: hidden;
+  }
+  
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 25px;
+    padding-top: 10px;  /* Ensures heading doesn't overlap */
+  }
+  
+  /* Form label styles */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input field styles */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for the predicted price result */
+  h2 {
+    text-align: center;
+    color: #28a745;
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+  
+    h1 {
+        font-size: 26px;
+    }
+  
+    button {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+  
+    h1 {
+        font-size: 22px;
+    }
+  
+    input[type="text"],
+    input[type="number"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+  
+    button {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+  }
